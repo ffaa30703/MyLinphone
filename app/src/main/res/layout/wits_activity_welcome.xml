@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/welcomLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wits_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/welcome_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dip"
+        android:text="@string/welcom"
+        android:textColor="#FFFFFF"
+        android:textSize="40dip"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="360dip"
+        android:layout_height="200dip"
+        android:layout_below="@id/welcome_textview"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:background="@drawable/wits_up_town_area_background"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/upton_name"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dip"
+            android:layout_marginRight="40dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/wits_upton_name_background"
+            android:gravity="center"
+            android:paddingLeft="50dip"
+            android:paddingRight="50dip"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="130dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/room_first_name"
+                android:layout_width="150dip"
+                android:layout_height="130dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/wits_room_number_background"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="40dip"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/room_last_name"
+                android:layout_width="150dip"
+                android:layout_height="130dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/wits_room_number_background"
+                android:gravity="center"
+                android:text="152"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <fragment
+        android:name="com.wits.intercom.TimeAndTemperatureFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="#ff00ff" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="horizontal"
+            >
+            <Button 
+                android:id="@+id/bt_call_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="callPage"
+                
+                android:textSize="15sp"
+                 />
+            <Button
+                android:id="@+id/bt_call_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="callIp"
+
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

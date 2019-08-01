@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ready_to_call_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wits_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wits_ready_call_background1"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip" >
+
+        <ImageView
+            android:id="@+id/to_call_a_room"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:src="@drawable/wits_to_call_a_room" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/press_no"
+                android:layout_width="140dip"
+                android:layout_height="165dip"
+                android:src="@drawable/wits_dial_room_number" />
+
+            <ImageView
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_marginLeft="30dip"
+                android:src="@drawable/wits_arrow" />
+
+            <ImageView
+                android:id="@+id/touch_to_call"
+                android:layout_width="140dip"
+                android:layout_height="165dip"
+                android:layout_marginLeft="30dip"
+                android:src="@drawable/wits_touch_to_call" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout android:id="@+id/clear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/wits_ready_call_background2"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        
+        >
+        
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wits_toclear"
+            android:layout_weight="1"/>
+        
+             <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wits_arrow2"
+              android:layout_weight="2"/>
+             
+                  <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wits_del_arrow"
+              android:layout_weight="2"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

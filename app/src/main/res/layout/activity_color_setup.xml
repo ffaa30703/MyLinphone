@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/wits_background">
+    
+    <TableLayout 
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+	    android:layout_centerHorizontal="true"
+        >
+        
+       <TableRow  
+           android:gravity="center" 
+           android:layout_marginTop="@dimen/tab_image_margin_top"        
+           >
+           <ImageView    
+           android:id="@+id/key_color"
+           android:layout_width="@dimen/tab_image_width"
+		   android:layout_height="@dimen/tab_image_height"
+		   android:src="@drawable/wits_key_color"
+		    />
+           
+            <ImageView      
+           android:id="@+id/board_color"
+           android:layout_marginLeft="@dimen/tab_image_dh"
+           android:layout_width="@dimen/tab_image_width"
+		   android:layout_height="@dimen/tab_image_height"
+		   android:src="@drawable/wits_border_color"
+		   />
+           
+       </TableRow>
+       
+       
+       <TableRow 
+            android:gravity="center"
+            android:layout_marginTop="@dimen/tab_image_dv">
+            <ImageView   
+             android:id="@+id/back" 
+     		 android:layout_width="@dimen/tab_image_width"
+		     android:layout_height="@dimen/tab_image_height"
+		  	 android:src="@drawable/wits_back"
+		  	 />
+           
+             <ImageView
+             android:id="@+id/none"      
+             android:layout_marginLeft="@dimen/tab_image_dh"
+             android:layout_width="@dimen/tab_image_width"
+		     android:layout_height="@dimen/tab_image_height"
+		  	 android:visibility="invisible"
+		  	/>
+       </TableRow>
+       </TableLayout>
+          
+   	<fragment android:name="com.wits.intercom.TimeAndTemperatureFragment"
+       	android:id="@+id/timefragment"
+       	android:layout_width="fill_parent"
+       	android:layout_height="wrap_content"
+       	android:layout_alignParentBottom="true"
+	    android:paddingBottom="0dip"
+     />
+ 
+
+</RelativeLayout>

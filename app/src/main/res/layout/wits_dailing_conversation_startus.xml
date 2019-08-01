@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wits_background"
+ >
+    <TextView  
+        	  android:id="@+id/et_room_no_show"
+        	  android:layout_width="500dip"
+        	  android:layout_height="60dip"
+       	      android:gravity="center"
+         	  android:textSize="50sp"
+              android:textStyle="bold"
+              android:textColor="@android:color/holo_red_light"
+              android:layout_marginTop="40dip"
+              android:layout_centerHorizontal="true"
+        	  android:background="@drawable/wits_chenked_password_result_frame"
+        	   />
+    
+    <ImageView  
+        		android:id="@+id/phone_conversion"
+        		android:layout_below="@id/et_room_no_show"
+        		android:layout_height="180dip"
+        		android:layout_width="200dip"
+        		android:layout_marginLeft="20dip"
+        		android:layout_marginTop="10dip"
+        		android:src="@drawable/wits_phone_conversation_ringing"/>
+    
+    <ImageView  android:id="@+id/conversion_status"
+        		android:layout_toRightOf="@id/phone_conversion"
+        		android:layout_marginTop="10dip"
+        		android:layout_below="@id/et_room_no_show"
+        		android:layout_width="250dip"
+        		android:layout_height="60dip"
+        		android:src="@drawable/wits_conversation_status_ringing"/>
+    
+	<include  
+	     android:id="@+id/conversion_time_layout"
+	     layout = "@layout/wits_dailing_clock"
+   		 android:layout_width="170dip"
+  		 android:layout_height="100dip"
+   		 android:layout_alignRight="@+id/et_room_no_show"
+         android:layout_below="@+id/conversion_status"
+         android:layout_marginRight="20dp"
+         android:layout_marginTop="10dip"
+         android:background="@drawable/wits_conversation_time_bg"/>"
+     
+     
+    <fragment 
+        android:name="com.wits.intercom.TimeAndTemperatureFragment"
+       	android:id="@+id/timefragment"
+       	android:layout_width="fill_parent"
+       	android:layout_height="wrap_content"
+       	android:layout_alignParentBottom="true"
+	    android:paddingBottom="0dip"
+     />
+
+</RelativeLayout>

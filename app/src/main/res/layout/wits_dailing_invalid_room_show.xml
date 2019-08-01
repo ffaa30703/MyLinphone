@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wits_background"
+    >
+ 
+    <TextView
+        android:id="@+id/et_invalid"
+        android:layout_width="400dip"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"    
+        android:gravity="center"  
+        android:background="@drawable/wits_chenked_password_result_frame"   
+        android:text="INVALID ROOM NUMBER"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+ <include layout="@layout/wits_part_time_and_temperature"/>
+</RelativeLayout>

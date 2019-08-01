@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/wits_background">
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="400dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/wits_ready_call_background1"
+        android:orientation="vertical">
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="5dip"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:background="@drawable/wits_to_use_screens"/>
+        
+        
+         <TextView 
+             android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="5dip"
+            android:textColor="#000000"         
+            android:gravity="center"
+            android:background="@drawable/wits_touch_to_button"/>
+         
+         <LinearLayout 
+             android:layout_width="wrap_content"
+             android:layout_height="160dip"
+             android:layout_marginLeft="10dip"
+             android:layout_marginRight="10dip"
+             android:layout_marginTop="5dip"
+             android:orientation="horizontal"
+             android:gravity="center"
+             android:layout_gravity="center"
+             android:background="#000000">
+             <!-- 左边耳朵 -->
+             <LinearLayout
+                 android:layout_width="60dip"
+                 android:layout_height="fill_parent"
+                 android:background="@drawable/wits_button_frame"
+                 android:orientation="vertical" >
+
+                 <ImageView
+                     android:id="@+id/call_door_keep_button"
+                     android:layout_width="40dip"
+                     android:layout_height="40dip"
+                     android:layout_marginTop="20dip"
+                     android:layout_gravity="center_horizontal"
+                     android:src="@drawable/wits_left_button" />
+
+                 <ImageView
+                     android:id="@+id/phone_book_button"
+                     android:layout_width="40dip"
+                     android:layout_height="40dip"
+                     android:layout_marginTop="20dip"
+                     android:layout_gravity="center_horizontal"
+                     android:src="@drawable/wits_left_button" />
+             </LinearLayout>
+         
+             <!-- 中间布局部分 -->
+             <include 
+                      android:layout_width="230dip"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      layout="@layout/wits_home_main"/>
+           <!-- 右边耳朵 -->
+           <LinearLayout
+                 android:layout_width="60dip"
+                 android:layout_marginLeft="5dip"
+                 android:layout_height="fill_parent"
+                 android:background="@drawable/wits_button_frame"
+                 android:orientation="vertical" >
+
+                 <ImageView
+                     android:id="@+id/call_guard_button"
+                     android:layout_width="40dip"
+                     android:layout_height="40dip"
+                     android:layout_marginTop="20dip"
+                     android:layout_gravity="center_horizontal"
+                     android:src="@drawable/wits_right_button" />
+
+                 <ImageView
+                     android:id="@+id/open_door_withpassword_button"
+                     android:layout_width="40dip"
+                     android:layout_height="40dip"
+                     android:layout_marginTop="20dip"
+                     android:layout_gravity="center_horizontal"
+                     android:src="@drawable/wits_right_button" />
+             </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+
+</RelativeLayout>

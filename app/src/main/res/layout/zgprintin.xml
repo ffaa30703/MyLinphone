@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <EditText 
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:id="@+id/show_printin"/>
+    
+    <!--  
+    <LinearLayout  android:layout_width="250dp"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal">
+       --> 
+   
+    <GridView 
+        android:id="@+id/printin_gridview"
+        android:layout_width="500dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:columnWidth="2dp"
+        android:numColumns="5"
+        />
+
+<!--  
+    <Button android:id="@+id/ok_button"
+        	android:layout_width="60dp"
+        	android:layout_height="240dp"
+        	android:text="OK"
+        	android:background="@drawable/zgpringinbg"/>"
+        	
+ </LinearLayout>
+ -->
+</LinearLayout>
